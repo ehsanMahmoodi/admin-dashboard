@@ -6,6 +6,9 @@ import {
 } from "@mui/icons-material";
 import {useStyle} from "./HomePage.style";
 import UserActivitisStatusCard from "./Components/UserActivitisStatusCard/UserActivitisStatusCard";
+import UserAnalyticLg from "./Components/UserAnalyticLg/UserAnalyticLg";
+import UserAnalyticSm from "./Components/UserAnalyticSm/UserAnalyticSm";
+import UserAnalyticsChart from "./Components/UserAnalyticsChart/UserAnalyticsChart";
 
 const HomePage = () => {
     // get css style
@@ -33,6 +36,20 @@ const HomePage = () => {
                 </Grid>
             </Grid>
             {/*end activitis*/}
+            {/*start userAnalytics*/}
+            <Grid container gap={1} className={classes.analyticSection} justifyContent={'space-between'}>
+                <Grid item xs={12} md={5} lg={5.1}>
+                    <UserAnalyticSm/>
+                    <UserAnalyticLg cardTitle={"earning"} time={"this month"}
+                                    benefitPercent={"+20.5%"}
+                                    benefitVolume={"$5070.80"}
+                                    innerChartText={"30% sales"}/>
+                </Grid>
+                <Grid item xs={12} md={6.7}>
+                    <UserAnalyticsChart sectionTitle={"sales analytics"}/>
+                </Grid>
+            </Grid>
+            {/*end userAnalytics*/}
         </Container>
     )
 }

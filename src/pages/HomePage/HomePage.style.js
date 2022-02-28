@@ -11,5 +11,7 @@ export const useStyle = makeStyles({
         background: '#fff',
         margin: '0 !important',
         padding: '0.81rem'
+    }, analyticSection: {
+        marginBottom: '1rem'
     }
 })
