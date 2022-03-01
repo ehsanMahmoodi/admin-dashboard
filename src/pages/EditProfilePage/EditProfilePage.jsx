@@ -7,6 +7,7 @@ import TabContext from '@mui/lab/TabContext';
 import TabPanel from '@mui/lab/TabPanel';
 import {useLocation} from "react-router-dom";
 import TabList from '@mui/lab/TabList';
+import UserProfile from "./Components/UserProfile";
 
 
 const EditProfilePage = () => {
@@ -39,7 +40,7 @@ const EditProfilePage = () => {
                                 <Tab label="delete account" value="5"/>
                             </TabList>
                         </Box>
-                        <TabPanel value="1"></TabPanel>
+                        <TabPanel value="1"><UserProfile location={location.state}/></TabPanel>
                         <TabPanel value="2"></TabPanel>
                         <TabPanel value="3"></TabPanel>
                         <TabPanel value="4"></TabPanel>
