@@ -2,25 +2,14 @@ import {makeStyles} from "@mui/styles";
 
 export const useStyle = makeStyles({
     cardWrapper: {
-        maxWidth: '53.75rem',
-        maxHeight: '26.81rem',
-        width: '100%',
-        height: '100%',
-    },
-    cardHeader: {
+        maxWidth: '53.75rem', maxHeight: '26.81rem', width: '100%', height: '100%',
+    }, cardHeader: {
         "& p": {
-            fontWeight: 600,
-            textTransform: 'capitalize',
-            color: '#1F2937',
-            fontSize: '1.12rem',
-            marginBottom: '0.75rem'
-        },
-        "& span": {
-            color: '#4B5563',
-            fontSize: '1rem'
+            fontWeight: 600, textTransform: 'capitalize', color: '#1F2937', fontSize: '1.12rem', marginBottom: '0.75rem'
+        }, "& span": {
+            color: '#4B5563', fontSize: '1rem'
         }
-    },
-    cardBody: {
+    }, cardBody: {
         boxShadow: "0 0 6px #cbcbcb",
         marginTop: '1.5rem',
         backgroundColor: '#fff',
