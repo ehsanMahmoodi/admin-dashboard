@@ -9,6 +9,8 @@ import {useLocation} from "react-router-dom";
 import TabList from '@mui/lab/TabList';
 import UserProfile from "./Components/UserProfile/UserProfile";
 import UpdateUserPass from "./Components/UpdateUserPass/UpdateUserPass";
+import UserAuthentication from "./Components/UserAuthentication/UserAuthentication";
+import BrowserSession from "./Components/BrowserSession/BrowserSession";
 
 
 const EditProfilePage = () => {
@@ -16,7 +18,6 @@ const EditProfilePage = () => {
     const classes = useStyle()
     // get state from navigate
     const location = useLocation();
-    console.log(location);
     // handel to change tabs
     const [value, setValue] = useState("1");
     const handleChange = (event, newValue) => {
@@ -43,9 +44,9 @@ const EditProfilePage = () => {
                         </Box>
                         <TabPanel value="1"><UserProfile location={location.state}/></TabPanel>
                         <TabPanel value="2"><UpdateUserPass location={location.state}/></TabPanel>
-                        <TabPanel value="3"></TabPanel>
-                        <TabPanel value="4"></TabPanel>
-                        <TabPanel value="5"></TabPanel>
+                        <TabPanel value="3"><UserAuthentication/></TabPanel>
+                        <TabPanel value="4"><BrowserSession/></TabPanel>
+                        {/*<TabPanel value="5"><DeleteAccount/></TabPanel>*/}
                     </TabContext>
                 </Box>
             </Grid>
