@@ -13,5 +13,9 @@ export const useStyle = makeStyles({
         padding: '0.81rem'
     }, analyticSection: {
         marginBottom: '1rem'
+    }, userSectionItem: {
+        boxShadow: "0 0 6px #cbcbcb", borderRadius: '0.62rem', background: "#fff", padding: '1.25rem', "& > div": {
+            marginTop: '1rem'
+        }
     }
 })

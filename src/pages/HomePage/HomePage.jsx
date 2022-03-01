@@ -8,6 +8,7 @@ import UserAnalyticLg from "./Components/UserAnalyticLg/UserAnalyticLg";
 import UserAnalyticSm from "./Components/UserAnalyticSm/UserAnalyticSm";
 import UserAnalyticsChart from "./Components/UserAnalyticsChart/UserAnalyticsChart";
 import LatestUsers from "./Components/LatestUsers/LatestUsers";
+import RecentContacts from "./Components/RecentContacts/RecentContacts";
 
 const HomePage = () => {
     // get css style
@@ -52,6 +53,9 @@ const HomePage = () => {
         <Grid container gap={1} className={classes.userSection} mb={2} justifyContent={'space-between'}>
             <Grid item xs={12} md={6} lg={6.8} className={classes.userSectionItem}>
                 <LatestUsers sectionTitle={'latest users'}/>
+            </Grid>
+            <Grid item xs={12} md={5.7} lg={4.9}>
+                <RecentContacts sectionTitle={'recent contacts'}/>
             </Grid>
         </Grid>
         {/*end userActions*/}
