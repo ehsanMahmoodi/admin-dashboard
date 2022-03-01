@@ -11,6 +11,7 @@ import UserProfile from "./Components/UserProfile/UserProfile";
 import UpdateUserPass from "./Components/UpdateUserPass/UpdateUserPass";
 import UserAuthentication from "./Components/UserAuthentication/UserAuthentication";
 import BrowserSession from "./Components/BrowserSession/BrowserSession";
+import DeleteAccount from "./Components/DeleteAccount/DeleteAccount";
 
 
 const EditProfilePage = () => {
@@ -46,7 +47,7 @@ const EditProfilePage = () => {
                         <TabPanel value="2"><UpdateUserPass location={location.state}/></TabPanel>
                         <TabPanel value="3"><UserAuthentication/></TabPanel>
                         <TabPanel value="4"><BrowserSession/></TabPanel>
-                        {/*<TabPanel value="5"><DeleteAccount/></TabPanel>*/}
+                        <TabPanel value="5"><DeleteAccount/></TabPanel>
                     </TabContext>
                 </Box>
             </Grid>
