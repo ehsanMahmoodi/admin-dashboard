@@ -9,6 +9,7 @@ import UserAnalyticSm from "./Components/UserAnalyticSm/UserAnalyticSm";
 import UserAnalyticsChart from "./Components/UserAnalyticsChart/UserAnalyticsChart";
 import LatestUsers from "./Components/LatestUsers/LatestUsers";
 import RecentContacts from "./Components/RecentContacts/RecentContacts";
+import RecentUserTransaction from "./Components/RecentUserTransaction/RecentUserTransaction";
 
 const HomePage = () => {
     // get css style
@@ -56,6 +57,7 @@ const HomePage = () => {
             </Grid>
             <Grid item xs={12} md={5.7} lg={4.9}>
                 <RecentContacts sectionTitle={'recent contacts'}/>
+                <RecentUserTransaction sectionTitle={'recent transactions'}/>
             </Grid>
         </Grid>
         {/*end userActions*/}
