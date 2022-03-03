@@ -10,10 +10,16 @@ import UserAnalyticsChart from "./Components/UserAnalyticsChart/UserAnalyticsCha
 import LatestUsers from "./Components/LatestUsers/LatestUsers";
 import RecentContacts from "./Components/RecentContacts/RecentContacts";
 import RecentUserTransaction from "./Components/RecentUserTransaction/RecentUserTransaction";
+import {useContext, useEffect} from "react";
+import {PublicContext} from "../../context/context";
 
 const HomePage = () => {
     // get css style
     const classes = useStyle()
+    const {setActiveTab} = useContext(PublicContext)
+    useEffect(() => {
+        setActiveTab(1)
+    }, [])
     return (<Container maxWidth={'false'}>
         <Typography variant={'h3'} className={classes.sectionTitle}>Dashboard</Typography>
         {/*start activitis*/}
