@@ -9,9 +9,6 @@ import EditProfilePage from "../pages/EditProfilePage/EditProfilePage";
 import Page404 from "../pages/Page404/Page404";
 import RegisterPage from "../pages/RegisterPage/RegisterPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
-import {useContext, useEffect} from "react";
-import {PublicContext} from "../context/context";
-
 const App = () => {
     return (<Routes>
         <Route path={'/'} element={<Layout><HomePage/></Layout>}/>
