@@ -1,12 +1,9 @@
 import {Avatar, Box, Typography} from "@mui/material";
-import {useRef} from "react";
 import {useStyle} from "./UserProfile.style";
 
 const UserProfile = ({location}) => {
     // get css style
     const classes = useStyle()
-    const userPicRef = useRef()
-    // console.log(userPicRef.current.files[0].name);
     return (<Box className={classes.cardWrapper}>
         <Box className={classes.cardHeader}>
             <Typography>profile information</Typography>
@@ -17,11 +14,10 @@ const UserProfile = ({location}) => {
                 <Box className={classes.userAvatar}>
                     <Typography variant={'span'}>Photo</Typography>
                     <Avatar variant={'rounded'} src={(location.avatar) ? location.avatar : '/'}/>
-                    {/*<Avatar variant={'rounded'} src={(userPicRef.current)?userPicRef.current.files[0].name :'/'}/>*/}
                 </Box>
                 <Box className={classes.createNewAvatar}>
                     <label htmlFor="uploadPic">Select a new photo</label>
-                    <input ref={userPicRef} type="file" name="" id="uploadPic"/>
+                    <input type="file" name="" id="uploadPic"/>
                     <button>Remove photo</button>
                 </Box>
             </Box>

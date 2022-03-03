@@ -41,7 +41,7 @@ const Sidebar = () => {
         </Box>
         <Box className={classes.sideBarItemWrapper}>
             <Link to={'/'}><Box onClick={() => toggleTab(1)}
-                                className={(activeTab == 1) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                className={(activeTab === 1) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                 value={1} sx={{
                 width: (!openSideBarMenu) ? "2.6rem" : "auto",
             }}>
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Home</Typography>}
             </Box></Link>
             <Link to={'/users'}><Box onClick={() => toggleTab(2)}
-                                     className={(activeTab == 2) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                     className={(activeTab === 2) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                      sx={{
                                          width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                      }}>
@@ -59,7 +59,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Users</Typography>}
             </Box></Link>
             <Link to={'/calendar'}><Box onClick={() => toggleTab(3)}
-                                        className={(activeTab == 3) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                        className={(activeTab === 3) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                         sx={{
                                             width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                         }}>
@@ -68,7 +68,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Calendar</Typography>}
             </Box></Link>
             <Link to={'/messages'}><Box onClick={() => toggleTab(4)}
-                                        className={(activeTab == 4) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                        className={(activeTab === 4) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                         sx={{
                                             width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                         }}>
@@ -77,7 +77,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Messages</Typography>}
             </Box></Link>
             <Link to={'/projects'}><Box onClick={() => toggleTab(5)}
-                                        className={(activeTab == 5) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                        className={(activeTab === 5) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                         sx={{
                                             width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                         }}>
@@ -86,7 +86,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Projects</Typography>}
             </Box></Link>
             <Link to={'/progress'}><Box onClick={() => toggleTab(6)}
-                                        className={(activeTab == 6) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                        className={(activeTab === 6) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                         sx={{
                                             width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                         }}>
@@ -95,7 +95,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Progress</Typography>}
             </Box></Link>
             <Link to={'/goals'}><Box onClick={() => toggleTab(7)}
-                                     className={(activeTab == 7) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                     className={(activeTab === 7) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                      sx={{
                                          width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                      }}>
@@ -104,7 +104,7 @@ const Sidebar = () => {
                     <Typography variant={'span'} className={classes.sideBarItemsText}>Goals</Typography>}
             </Box></Link>
             <Link to={'/settings'}><Box onClick={() => toggleTab(8)}
-                                        className={(activeTab == 8) ? classes.sideBarItems + ' active' : classes.sideBarItems}
+                                        className={(activeTab === 8) ? classes.sideBarItems + ' active' : classes.sideBarItems}
                                         sx={{
                                             width: (!openSideBarMenu) ? "2.6rem" : "auto",
                                         }}>

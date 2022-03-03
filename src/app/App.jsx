@@ -9,8 +9,14 @@ import EditProfilePage from "../pages/EditProfilePage/EditProfilePage";
 import Page404 from "../pages/Page404/Page404";
 import RegisterPage from "../pages/RegisterPage/RegisterPage";
 import LoginPage from "../pages/LoginPage/LoginPage";
+import {useEffect} from "react";
 
 const App = () => {
+    // handel to show sidebar active class in site startup
+    useEffect(() => {
+        localStorage.removeItem('sidebarIndex')
+    }, []);
+
     return (<Routes>
         <Route path={'/'} element={<Layout><HomePage/></Layout>}/>
         <Route path={'/users'} element={<Layout><UserListPage/></Layout>}/>
